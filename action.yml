@@ -5,6 +5,9 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  new-param:
+    description: 'New required param' 
+    required: true
 outputs:
   random-number:
     description: "Random number"
@@ -31,4 +34,5 @@ runs:
       
     - run: ${{ github.action_path }}/goodbye.sh
       shell: bash
+
 
